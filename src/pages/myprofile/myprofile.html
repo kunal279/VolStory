@@ -1,0 +1,139 @@
+<!--
+    Generated template for the MyprofilePage page.
+    
+    See http://ionicframework.com/docs/components/#navigation for more info on
+    Ionic pages and navigation.
+-->
+<ion-header>
+    
+    <ion-navbar>
+        <ion-title>myprofile</ion-title>
+    </ion-navbar>
+    
+</ion-header>
+
+
+<ion-content>
+    <div class="pro"><img class="picture" src="assets/imgs/download.png"></div>
+    <div>
+        <ion-label class="titl">
+            Saniya Mathur
+        </ion-label>
+        <p class="info">25, Female</p>
+        <p class="info">Nashik, Maharashtra</p>
+    </div>
+    <ion-grid class="foloverall">
+        <ion-row class="folouter">
+            
+            <ion-col col-6 class="folinner" style="text-align: center">
+                <ion-row class="folicon"><ion-label class="followers"><b>58</b></ion-label></ion-row>
+                <ion-row class="folname"><ion-label class="followers">Following</ion-label></ion-row>
+            </ion-col>
+            <ion-col col-6 class="">
+                <ion-row class="folicon"><ion-label class="followers"><b>108</b></ion-label></ion-row>
+                <ion-row class="folname"><ion-label class="followers">Followers</ion-label></ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <div class="gap"></div>
+    <div class="detail" item-start no-lines>
+        <ion-row class="contact">
+            <img item-start class="e-detail"  src="../../assets/imgs/SystemIcons/mail.svg">
+            <ion-label class="spac">8756542452</ion-label>
+        </ion-row>
+    </div>
+    <div class="detail" item-start no-lines>
+        <ion-row class="contact">
+            <img item-start class="e-detail" src="../../assets/imgs/SystemIcons/mail.svg">
+            <ion-label class="spac">saniyamathur@gmail.com</ion-label>
+        </ion-row>
+    </div>
+    <div class="detail" item-start no-lines>
+        <ion-row class="contact">
+            <img item-start class="e-detail" src="../../assets/imgs/SystemIcons/public event.svg">
+            <ion-label class="spac">www.worldpeace.com</ion-label>
+        </ion-row>
+    </div>
+    <div class="gap"></div>
+    <div class="divide"></div>
+    
+    <a clear (click)="interests()"> 
+        <ion-item class="before" no-lines>
+            <ion-label class="history">
+                Events Volunteered
+                <ion-icon class="drop" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+            </ion-label>
+        </ion-item>
+    </a>
+    <a> 
+        <ion-item class="before" no-lines>
+            <ion-label class="history">
+                Events Hosted
+                <ion-icon class="drop" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+            </ion-label>
+        </ion-item>
+    </a>
+    <a> 
+        <ion-item class="before" no-lines>
+            <ion-label class="history">
+                Skills
+                <ion-icon class="drop" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+            </ion-label>
+        </ion-item>
+    </a>
+    <a clear (click)="createprofile()"> 
+        <ion-item class="before" no-lines>
+            <ion-label class="history">
+                create profile page
+                
+                
+                <ion-icon class="drop" style="text-align: right" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+                
+                
+            </ion-label>
+        </ion-item>
+    </a>
+    <a clear (click)="joinreq()"> 
+        <ion-item class="before" no-lines>
+            <ion-label class="history">
+                join re
+                
+                
+                <ion-icon class="drop" style="text-align: right" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+                
+                
+            </ion-label>
+        </ion-item>
+    </a>
+    <div class="intesrest" *ngIf="buttonClicked">
+        <ion-card>
+            <ion-item class="diff" no-lines>
+                <img class="e-icon" src="../../assets/imgs/Category-Environment.svg" item-start>
+                <p class="subtitle">Gundicha Cleaning</p>
+                <p class="subtext">Environmental Care
+                    <img class="s-icons" src="../../assets/imgs/SystemIcons/only followers.svg">
+                </p>
+            </ion-item>
+            
+            <ion-item class="details" item-start no-lines>
+                <img item-start class="e-details" src="../../assets/imgs/SystemIcons/calendar.svg">
+                <ion-label class="space">Fri, Jan 7, 13 Day Event</ion-label>
+            </ion-item>
+            <ion-item class="details" item-start no-lines>
+                <img item-start class="e-details" src="../../assets/imgs/SystemIcons/person (user).svg">
+                <ion-label class="space">Aditya Singh</ion-label>
+            </ion-item>
+            <ion-item class="details" item-start no-lines>
+                <img item-start class="e-details" src="../../assets/imgs/SystemIcons/location.svg">
+                <ion-label class="space">NVCC Katraj</ion-label>
+            </ion-item>
+            <ion-item class="lines">
+                <div>
+                    <button class="b-share"><img class="share" src="../../assets/imgs/SystemIcons/share.svg"></button>
+                    <button class="b-share"><img class="share" src="../../assets/imgs/SystemIcons/star border.svg"></button>
+                    <button class="b-share"><img class="share" src="../../assets/imgs/SystemIcons/join event 2.svg"></button>
+                </div>    
+            </ion-item><div class="adjust"></div>
+        </ion-card> 
+    </div>
+</ion-content>

@@ -1,0 +1,137 @@
+page-filter {
+    .back-button.show-back-button {
+        display: none;
+    }
+    .title{
+        font-family: "DroidSans";
+        color:#ffffff;
+        font-size: 16px;
+        opacity: 87%;
+    }
+    .toolbar-title-md {
+        padding: 0 8px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        opacity: 87%;
+    }
+    .md [padding] {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .segment-md .segment-button{
+        border-bottom-width: 0.5px;
+        color:#000000;
+        font-family: "DroidSans";
+        font-size: 14px;
+        text-transform: none;
+        border-bottom-color: #b2b2b2;
+    }
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+        border-color: #b2b2b2;
+    }
+    .seg{
+        padding-top: 0px;
+        padding-left:16px;
+        padding-right: 16px;
+        padding-bottom: 0px;
+    }
+
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 12px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family:"DroidSans";
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Hide the browser's default checkbox */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 90%;
+        height: 25px;
+        width: 25px;
+        background-color: #ffffff;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+        background-color: #ffffff;
+        color: blue;
+    }
+    
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+        background-color: #ffffff;
+    }
+    
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .done{
+        
+        background-color: #5dc7c8;
+        height: 40px;
+        color:white;
+        text-align: center;
+    }
+    .button-md:hover:not(.disable-hover) {
+        background-color: #5dc7c8;
+    }
+    .button-md {
+        border-radius: 0px;
+        margin:0px;
+        width:100%;
+    }
+    
+    .col{
+        margin: 0px;
+    }
+    .row
+    {
+        position: fixed; 
+        bottom:300px;
+           
+    }
+    .no-scroll .scroll-content{
+        overflow-x: hidden;
+    }
+
+
+}
