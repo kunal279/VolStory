@@ -1,0 +1,73 @@
+<!--
+  Generated template for the CreateEventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>   
+    <ion-navbar>
+        <ion-row><a clear (click)="back()"><img src="../../assets/imgs/SystemIcons/arrow_back.svg"></a>
+            <ion-title class="title">Create Event</ion-title>
+        </ion-row>
+    </ion-navbar>
+</ion-header>
+
+<ion-content >
+    <div class="progress" ></div>
+    <img class="pro-pic" src="../../assets/imgs/pp.png">
+    <ion-item>
+        <ion-input class="etitle" placeholder="Event Title" type="text"></ion-input>    
+    </ion-item>    
+    <ion-item>
+        <ion-label>Category</ion-label>
+        <ion-select [(ngModel)]="Category">
+            <ion-option value="nes">Child Education</ion-option>
+            <ion-option value="n64">Environment </ion-option>
+            <ion-option value="ps">Animal care</ion-option>
+            <ion-option value="genesis">Spiritual</ion-option>
+            <ion-option value="saturn">Charity</ion-option>
+            <ion-option value="snes">Culturak</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Event Location</ion-label>
+        <ion-select [(ngModel)]="Location">
+            <ion-option value="nes">Katraj</ion-option>
+            <ion-option value="n64">Bharati Vidyapith</ion-option>
+            <ion-option value="ps">Taljai Tekdi</ion-option>
+            <ion-option value="genesis">Hinjewadi</ion-option>
+            <ion-option value="saturn">Sinhagad</ion-option>
+            <ion-option value="snes">Deccan</ion-option>
+        </ion-select>
+    </ion-item >
+    <ion-item no-lines>
+        <ion-label>Add Discription</ion-label>
+        <ion-label class="limit">150-300 characters</ion-label>
+    </ion-item>
+    <ion-item no-lines>
+        
+        <ion-textarea>
+            
+        </ion-textarea>
+    </ion-item>
+    <ion-item no-lines>
+        <ion-label>Add Tags</ion-label>
+        
+    </ion-item>
+    <ion-item no-lines>
+        
+        <ion-textarea class="tags">
+            
+        </ion-textarea>
+    </ion-item>
+    
+            
+
+    
+    <ion-grid>
+        <ion-row>
+            <button class="back" clear (click)="back()" ion-button>BACK</button>
+            <button class="next" clear (click)="next()" ion-button>NEXT</button>
+        </ion-row>
+    </ion-grid>  
+</ion-content>

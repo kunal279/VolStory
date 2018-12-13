@@ -1,0 +1,158 @@
+page-create-event {
+    .progress{
+        margin-top: 1px;
+        margin-bottom: 1px;
+        border-top-style: solid;
+        border-top-width: 6px;
+        padding: 0px;
+        border-top-color: #F3A000;
+        margin-left: 0px;
+        margin-right: 66.666666%;
+    }
+    .title{
+        font-family: "DroidSans";
+        color:#ffffff;
+        font-size: 16px;
+        opacity: 87%;
+    }
+    .back-button.show-back-button {
+        display: none;
+    }
+    .toolbar-title-md {
+        padding: 0 8px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        opacity: 87%;
+    }
+    .pro-pic{
+        width:100%;
+        margin:0px;
+    }
+
+    .etitle.text-input-md {
+        margin: 16px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        width: calc(100% - 8px - 8px);
+        font-family: "DroidSans";
+        color: #666666;
+    }
+    .text-input-md {
+        margin: 16px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        width: calc(100% - 8px - 8px);
+        font-family: "DroidSans";
+        color: #666666;
+        
+    }
+    .item-datetime.label-md {
+        color: #666666;
+        font-family: "DroidSans";
+    }
+    
+    .label-md {
+        margin: 8% 0% 0% 0%;
+        color:#666666;
+        font-family: "DroidSans";
+
+    }
+    .limit.label-md {
+        margin: 13px 8px 0px 0px;
+        color:#666666;
+        text-align: right;
+        font-size:12px;
+        font-family: "DroidSans";
+    }
+
+    textarea.text-input {
+        display: block;
+        border: 0;
+        height: 82px;
+        width: 314px;
+        margin: 0px;
+        outline-color: #b2b2b2;
+        outline-style: auto;
+        border-bottom: 0;
+        color: #212121;
+    }
+    .tags textarea.text-input {
+        display: block;
+        border: 0;
+        height: 50px;
+        margin: 0px;
+        outline-color: #b2b2b2;
+        outline-style: auto;
+        border-bottom: 0;
+        color: #212121;     
+    }
+    .item-md {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size:14px;
+        color: #212121;
+    }
+    .limit.label-md.limit.label-md {
+        margin: 8% 0% 0% 0%;
+        color: #b2b2b2;
+        text-align: right;
+        font-size: 10px;
+        font-family: "DroidSans";
+    }
+
+    .back {
+        border-radius: 0px;
+        //overflow: hidden;
+        outline-color: #212121;
+        font-family: "DroidSans";
+        height: 40px;
+        width: 51%;
+        font-size: 16px;
+        bottom: 0px;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: white;
+        margin-left: -5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        position: fixed;
+        color: #666666;
+    }
+    .back:hover:not(.disable-hover) {
+        background-color: white;
+    }
+    .next {
+        border-radius: 0px;
+        //overflow: hidden;
+      //  outline-color: #212121;
+        font-family: "DroidSans";
+        height: 40px;
+        width: 50%;
+        font-size: 16px;
+        bottom: 0px;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: white;
+        
+        margin-left: 49%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        position: fixed;
+        color: #f3b000;
+    }
+    .next:hover:not(.disable-hover) {
+        background-color: white;
+    }
+    .back .button-inner{
+        outline-style: auto;
+    }
+    .next .button-inner{
+        outline-style: auto;    
+    }
+
+}

@@ -1,0 +1,104 @@
+<!--
+  Generated template for the EventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>   
+    <ion-navbar>
+        <ion-row><a clear (click)="back()"><img src="../../assets/imgs/SystemIcons/arrow_back.svg"></a>
+            <ion-title class="title">Event
+               <a clear (click)="back()"> <ion-icon class="share" ios="ios-share" md="md-share"></ion-icon></a>
+                <ion-icon class="more" ios="ios-more" md="md-more"></ion-icon>
+
+            </ion-title>
+        </ion-row>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <img class="eventimg" src="assets/imgs/event.png">
+    <!--<ion-card>-->
+        <ion-item class="diff" no-lines>
+        <ion-grid class="overall">
+          <ion-row class="outer">
+            <ion-col col-2 class="inner">
+                <ion-row class="short"><h1 class="datecolumn">Mar</h1></ion-row>
+                <ion-row class="short"><h1 class="datecolumn">20</h1></ion-row>
+            </ion-col>
+            <ion-col col-6>
+                <p class="subtitle"><b>Vriksharopan Kala</b></p>
+                <p class="subtext">Environmental Care
+                    <img class="s-icons" src="../../assets/imgs/SystemIcons/public event.svg">
+                </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-item>
+    <div class="divide" ></div>
+    
+    <ion-item class="details lines" item-start no-lines>
+        <img item-start class="e-details" src="assets/imgs/SystemIcons/person (user).svg">
+            <ion-label class="space">Rahul Joshi</ion-label>
+        </ion-item>
+      <ion-item class="details" item-start no-lines>
+          <img item-start class="e-details" src="assets/imgs/SystemIcons/calendar.svg">
+              <ion-label class="space">Fri, Jan 7, 13 Day Event</ion-label>
+          </ion-item>
+          <ion-item class="details" item-start no-lines>
+              <img item-start class="e-details" src="../../assets/imgs/SystemIcons/time(clock).svg">
+              <ion-label class="space">9:00 am to 3:00 pm</ion-label>
+          </ion-item>
+          <ion-item class="details" item-start no-lines>
+              <img item-start class="e-details" src="assets/imgs/SystemIcons/location.svg">
+              <ion-label class="space">NVCC Katraj</ion-label>
+          </ion-item>
+          <div class="divide" ></div>
+          
+          <ion-item no-lines>
+              <ion-label class="titl">
+                 <b> Facilities</b>
+              </ion-label>
+          </ion-item>
+          
+          <!---Facilities Grid start-->          
+          <ion-grid class="facoverall">
+              <ion-row class="facouter">
+                <ion-col col-3 class="facinner">
+                    <ion-row class="facicon"><img class="stipend" src="assets/imgs/SystemIcons/Stipend.svg" ></ion-row>
+                    <ion-row class="facname"><p class="facility">Stipend</p></ion-row>
+                </ion-col>
+                <ion-col col-3 class="facinner">
+                    <ion-row class="facicon"><img class="stipend" src="assets/imgs/SystemIcons/snacks (cup).svg" ></ion-row>
+                    <ion-row class="facname"><p class="facility">Snacks</p></ion-row>
+                </ion-col>
+                <ion-col col-3 class="facinner">
+                    <ion-row class="facicon"><img class="stipend" src="assets/imgs/SystemIcons/certificate.svg" ></ion-row>
+                    <ion-row class="facname"><p class="facility">Certificate</p></ion-row>
+                </ion-col>
+                <ion-col col-3 class="facinner">
+                    <ion-row class="facicon"><img class="stipend" src="assets/imgs/SystemIcons/meal(spoon fork).svg" ></ion-row>
+                    <ion-row class="facname"><p class="facility">Meal</p></ion-row>
+                </ion-col>  
+              </ion-row>
+            </ion-grid>
+             <!---Facilities Grid ends-->
+
+            <div class="divide" ></div>
+            <a> 
+                <ion-item no-lines>
+                    <ion-label class="titl">
+                       <b> Required Skills</b>
+                        <ion-icon class="drop" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+                    </ion-label>
+                </ion-item>
+            </a>
+            <!--</ion-card>-->
+            <ion-grid>
+                <ion-row>
+                    <button class="back" clear (click)="back()" ion-button>BACK</button>
+                    <button class="next" clear (click)="next()" ion-button>NEXT</button>
+                </ion-row>
+            </ion-grid> 
+</ion-content>

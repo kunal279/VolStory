@@ -1,0 +1,89 @@
+<!--
+  Generated template for the EventdetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>   
+    <ion-navbar>
+        <ion-row><a clear (click)="back()"><img src="../../assets/imgs/SystemIcons/arrow_back.svg"></a>
+            <ion-title class="title">Create Event</ion-title>
+        </ion-row>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <div class="progress" ></div>
+    <ion-item no-lines padding-left>
+      <ion-label>
+      Event Discription
+    </ion-label>
+  </ion-item>
+  <ion-item no-lines padding-left>
+  <ion-label>
+      From
+    </ion-label>
+  </ion-item>  
+  <ion-item  padding-left>
+      <ion-datetime displayFormat="DDD, MMM DD, YYYY HH:mm, A" placeholder="Day / Date / Time" [(ngModel)]="startDate"></ion-datetime>
+  </ion-item> 
+  <ion-item no-lines padding-left>
+      <ion-label>
+          To
+      </ion-label>
+  </ion-item>  
+  <ion-item padding-left>
+      <ion-datetime displayFormat="DDD, MMM DD, YYYY HH:mm, A" placeholder="Day / Date / Time" [(ngModel)]="endDate"></ion-datetime>
+  </ion-item> 
+  <ion-item no-lines padding-left>
+      <ion-label>
+          Last Date of Joining
+      </ion-label>
+  </ion-item>  
+  <ion-item padding-left>
+      <ion-datetime displayFormat="DDD, MMM DD, YYYY HH:mm, A" placeholder="Day / Date" [(ngModel)]="lastJoinDate"></ion-datetime>
+  </ion-item>
+  <ion-item no-lines padding-left>
+      <ion-label class="vclabel">
+          Required Volunteers
+      </ion-label>
+  </ion-item>
+  
+  <ion-grid>
+      <ion-row class="vol">
+          <ion-col col-4>
+              <ion-row class="volmin"><ion-label class="min">Min</ion-label>
+                  <ion-input class="volCount" type="number" value="min"></ion-input>
+              </ion-row>
+          </ion-col>
+          <ion-col col-4>
+              <ion-row class="volmax"><ion-label class="max">Max</ion-label>
+                  <ion-input class="volCount" type="number" value="min"></ion-input>
+              </ion-row>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+  
+  <!-- <ion-item no-lines>
+      <ion-select [(ngModel)]="skills" multiple="true" (click)="skills()">
+          <ion-option> 
+              <ion-chip>
+                  <ion-label color="secondary">Secondary Label</ion-label>
+              </ion-chip>
+          </ion-option>
+      </ion-select>
+  </ion-item>
+  <div *ngIf="buttonClicked">
+      <ion-chip>tiny</ion-chip>
+      <ion-chip>bigbigbigbig</ion-chip>
+      <ion-chip>little</ion-chip>
+  </div> -->
+
+  <ion-grid>
+      <ion-row>
+          <button class="back" clear (click)="back()" ion-button>BACK</button>
+          <button class="next" clear (click)="next()" ion-button>NEXT</button>
+      </ion-row>
+  </ion-grid>  
+</ion-content>

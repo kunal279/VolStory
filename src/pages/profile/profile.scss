@@ -1,0 +1,231 @@
+page-profile {
+   
+    .back-button.show-back-button {
+        display: none;
+    }
+    .toolbar-title-md {
+        padding: 0 8px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        opacity: 87%;
+    }
+    .more{
+        margin-left:6%;
+    }
+    .picture{
+        border-radius: 50%;
+        text-align: center;
+        width: 25%;
+        
+    }
+    .pro{
+        padding-top: 6%;
+        padding-bottom: 4%;
+        text-align: center;
+    }
+    .titl.label-md {
+        margin: 1% 0% 0% 0%;
+        color:#212121;
+        font-family: "DroidSans";
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    
+    .foloicon{
+        width: 80px;
+        
+        text-align: center;
+    }
+    .facility {
+        width:80px ;
+        padding-left: 0% ;
+        margin: 0 ;
+        font-size: 14px;
+
+        text-align: center ;
+    }
+    p{
+        text-align: center ;
+        //font-size: 18px;
+        //margin:0;
+
+    }
+    
+    .info{
+        text-align: center;
+        font-family: "DroidSans";
+        font-size: 10px;
+        color: #b2b2b2;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .following {
+        width: 80px ;
+        margin: 0 ;
+        font-size: 18px;
+        text-align: center ;
+    }
+    .followers {
+        width: 80px;
+        margin: 0;
+        font-size: 18px;
+
+    }
+    [col-4] {
+        padding-left: 4.9%;
+        border-right: #b2b2b2;
+    }
+    .folinner{
+        text-align: center;
+        border-right: inset;
+        border-right-width: 1px;
+    }
+    .label-md {
+        margin: 1% 0px 0px 3.4%;
+    }
+   
+    .e-detail{
+        width:16px;
+    }
+    .spac{
+        font-family: "DroidSans";
+        font-size: 13px;
+    }
+    .contact{
+        padding-left: 3.2%;
+    }
+    .gap{
+        height: 15px;
+    }
+    .divide{
+                
+        border-top: 1px solid #b2b2b2  ;
+        //min-height:2px;
+        height: 1px;
+        margin-left: 3.2%;
+        margin-right:3.2% ;
+    }
+    .before{
+        padding:0;
+        margin-left: 3.2%;
+        margin-right: 3.2%;
+    }
+    .history{
+        margin: 0% 0% 0% 0%;
+        color:#212121;
+        font-family: "DroidSans";
+        font-size: 16px;
+        text-align: left;
+        clear: both;
+    }
+    .drop{
+        text-align: right ;
+        position: fixed ;
+        right: 22px ;
+       // clear: both;
+       // margin-left: 58%;
+        
+    }
+    .input-wrapper {
+        
+        border-bottom: inset;
+        border-width: 0px;
+    }
+
+    /* home page css start*/
+.card-md > .item:last-child, .card-md > .item:last-child .item-inner, .card-md > .item-wrapper:last-child .item {
+    border-bottom: 1px;
+}
+.card-md{
+    //box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0), 0 0px 0px 0px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.0);
+    box-shadow: none;
+}
+
+.e-icon{
+    width: 46px;
+    margin-left: 1%;
+}
+.subtitle{
+    margin:0 3px 18px;
+    font-size: 18px;
+    margin: 0 0px 0px;
+    opacity: 87%;
+    color:#212121;
+    font-family: "DroidSans";
+    font-weight: 100; //line-height: 24.2px;
+}
+.card-md {
+    margin: 0px;
+    border-radius: 0px;
+    width: 100%;
+}
+.subtext{
+    font-size: 13px;
+    opacity: 20%;   
+    font-family: "DroidSans"; 
+   // line-height: 12.2px;     
+}
+.s-icons{
+    width: 13px;
+    opacity: 87%;
+    color:#666666;
+    display: initial;
+}
+
+.e-details{
+    width: 13px;
+    margin-left: 7%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #666666;
+}
+
+.details{
+    margin-left: 2%;
+    min-height:14px;       
+}
+.space{
+    font-size: 13px;
+    height: 16px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left:12px;
+    font-family: "DroidSans";
+}
+.share{
+    width:24px; 
+    opacity: 87%;
+    margin-left:36px;
+    margin-right: 36px;
+    
+}
+.b-share{
+    background-color: transparent;
+}
+.lines{
+    border-bottom: 1px solid #b2b2b2  ;
+    border-top: 1px solid #b2b2b2  ;
+    min-height:25px;
+    
+}
+
+.lines .item-inner{
+    height: 10px;
+    margin-top: 4px;
+}
+.details .item-md[no-lines] {
+    height:10px;
+}
+.adjust{
+    min-height: 1px;
+}
+.item-md p {
+    margin: -2px 4px 3px;
+    width: 60%;
+}
+/* home page css end*/
+
+
+}

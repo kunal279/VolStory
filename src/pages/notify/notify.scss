@@ -1,0 +1,38 @@
+page-notify {
+    .back-button.show-back-button {
+        display: none;
+    }
+    .toolbar-title-md {
+        padding: 0 8px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        opacity: 87%;
+    }
+    .pic{
+        border-radius: 50%;
+        width: 75% ;
+        padding-right: 4px 0px 4px 0px;
+    }
+    .gap{
+        padding: 4px 0px 4px 0px;
+
+    }
+    .space{
+        padding: 0% -1px 0% 2.6%;    
+    }
+    .small{
+        font-family: "DroidSans" ;
+        font-size: 8px ;
+        color: #b2b2b2 ;
+        margin: 0px ;
+    }
+    .noti{
+        margin: 8px 0px 4px 0px ;
+        font-family: "DroidSans" ;
+        font-size: 12px;
+    }
+    .baground{
+        background-color: #b2b2b2;
+    }
+}

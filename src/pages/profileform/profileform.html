@@ -1,0 +1,126 @@
+<!--
+  Generated template for the ProfileformPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>   
+  <ion-navbar>
+      <ion-row><a clear (click)="back()"><img src="../../assets/imgs/SystemIcons/arrow_back.svg"></a>
+          <ion-title class="title">Profile 
+             <a clear (click)="back()"> </a>
+          </ion-title>
+      </ion-row>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <div>
+        
+    </div>
+    <ion-grid class="profile">
+        <ion-row class="pic-ker">
+            <ion-col class="follo" col-4>
+                <img class="pic" src="../../assets/imgs/pro-pic.png">
+            </ion-col>
+            <ion-col col-4 class="folinner" style="text-align: center">
+                <ion-row class="folicon"><p class="following" >0</p></ion-row>
+                <ion-row class="folname"><p class="facility" style="margin:0">Following</p></ion-row>
+            </ion-col>
+
+            <ion-col col-4 class="">
+              <ion-row class="folicon"><p class="followers">0</p></ion-row>
+              <ion-row class="folname"><p class="facility">followers</p></ion-row>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row class="row-ele">
+        <img class="person" src="assets/imgs/SystemIcons/person (user).svg">
+        <ion-input class="name" placeholder="Name" type="text"></ion-input>
+      </ion-row>
+      <div class="h-line"></div>
+      <ion-row class="row-ele">
+        <img class="person" src="assets/imgs/SystemIcons/Birthday cake.svg">
+        <ion-input class="name" placeholder="Age" type="text"></ion-input>
+        <img class="person" src="assets/imgs/SystemIcons/gender.svg">
+         
+        <ion-col col-5>
+        <ion-select class="name gen" placeholder="Gender" [(ngModel)]="gender">
+          <ion-option value="male">Male</ion-option>
+            <ion-option value="female">Female</ion-option>
+        </ion-select>
+      </ion-col>
+      </ion-row>
+      <div class="h-line"></div>
+      <ion-row class="row-ele">
+        <img class="person" src="assets/imgs/SystemIcons/location.svg">
+        <ion-input class="name" placeholder="Location" type="text"></ion-input>
+      </ion-row>
+      <div class="h-line"></div>
+      <ion-row class="row-ele">
+        <img class="person" src="assets/imgs/SystemIcons/mail.svg">
+        <ion-input class="name" placeholder="Mobile Number" type="text"></ion-input>
+        
+        
+        <!-- <ion-col col-3>
+          <img class="toggle"  src="assets/imgs/SystemIcons/toggle off.svg"<ion-icon class="name" name="switch"></ion-icon>>
+        </ion-col> -->
+      </ion-row>
+
+      <div class="h-line"></div>
+      <ion-row class="row-ele">
+        <img class="person" src="assets/imgs/SystemIcons/mail.svg">
+        <ion-input class="name" placeholder="Email-Id" type="text"></ion-input>
+
+        <ion-col col-3>
+          <img class="toggle" src="">
+        </ion-col>
+      </ion-row>
+
+      <div class="h-line"></div>
+      <ion-row class="row-ele">
+        <img class="person" src="assets/imgs/SystemIcons/website.svg">
+        <ion-input class="name" placeholder="Website" type="text"></ion-input>
+
+        <!-- <ion-col col-3>
+          <img class="toggle" src="">
+        </ion-col> -->
+      </ion-row>
+
+      <div class="h-line"></div>
+
+      
+
+    </ion-grid>
+    <ion-row class="row-ele">
+        <ion-input class="name" placeholder="Skills" type="text"></ion-input>
+      </ion-row>
+      <div class="h-line"></div>
+
+      <ion-row class="row-ele">
+        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
+      </ion-row>
+      <div class="h-line"></div>
+
+      <ion-row class="row-ele">
+        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
+      </ion-row>
+      <div class="h-line"></div>
+      <ion-row class="row-ele">
+        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
+      </ion-row>
+      <div class="h-line"></div>
+      <ion-row class="row-ele">
+        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
+      </ion-row>
+      <div class="h-line"></div>
+      <ion-row class="row-ele">
+        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
+      </ion-row>
+      <div class="h-line"></div>
+
+
+</ion-content>

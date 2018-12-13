@@ -1,0 +1,188 @@
+page-home {
+    .statubar{
+        background-color: #03756c;
+    }
+    .e-icon{
+        width: 46px;
+        margin-left: 1%;
+    }
+    .subtitle{
+        margin:0 3px 18px;
+        font-size: 18px;
+        margin: 0 0px 0px;
+        opacity: 87%;
+        color:#212121;
+        font-family: "DroidSans";
+        font-weight: 100; //line-height: 24.2px;
+    }
+    .card-md {
+        margin: 0px;
+        border-radius: 0px;
+        width: 100%;
+    }
+    .subtext{
+        font-size: 13px;
+        opacity: 20%;   
+        font-family: "DroidSans"; 
+       // line-height: 12.2px;     
+    }
+    .events {
+        margin: 7px 8px 0px 7px;
+        font-family: "DroidSans"; 
+        font-size: 13px; 
+        font-weight: 100; 
+        line-height: 14.3px;
+        color: #666666;
+    }
+    .s-icons{
+        width: 13px;
+        opacity: 87%;
+        color:#666666;
+        display: initial;
+    }
+    .item-md p {
+        margin: -2px 4px 3px;
+        width: 60%;
+    }
+    .e-details{
+        width: 13px;
+        margin-left: 7%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        color: #666666;
+    }
+
+    .details{
+        margin-left: 2%;
+        min-height:14px;       
+    }
+    .space{
+        font-size: 13px;
+        height: 16px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left:12px;
+        font-family: "DroidSans";
+    }
+    .share{
+        width:24px; 
+        opacity: 87%;
+        margin-left:36px;
+        margin-right: 36px;
+        
+    }
+    .b-share{
+        background-color: transparent;
+    }
+    .lines{
+        border-bottom: 1px solid #b2b2b2  ;
+        border-top: 1px solid #b2b2b2  ;
+        min-height:25px;
+        
+    }
+
+    .lines .item-inner{
+        height: 10px;
+        margin-top: 4px;
+    }
+    .details .item-md[no-lines] {
+        height:10px;
+    }
+    .adjust{
+        min-height: 1px;
+    }
+    .menu{
+        width: 14px;
+        margin-left: -20px;
+        color: #ffffff;
+    }
+    .toolbar-title-md {
+        padding: 0 0px;
+        font-size: 20px;
+        font-weight: 100;
+        color: #ffffff;
+        font-family: "DroidSans";
+        opacity: 87%;
+    }
+    .option{
+        margin-left:4%;
+    }
+    .search{
+        margin-left:55%;
+    }
+    .card-md > .item:last-child, .card-md > .item:last-child .item-inner, .card-md > .item-wrapper:last-child .item {
+        border-bottom: 1px;
+    }
+    
+    .col{
+        margin: 0;
+        left: 74%;
+        right:10%;
+        column-count: 28;
+    }
+    .row
+    {
+        position:fixed;
+        bottom: 100px;
+    }
+    .fab-md {
+        color: #fff;
+        background-color: #f3b000;
+        height: 56px;
+        width: 56px;
+        opacity: 100;
+    }
+    .h{
+        height: 15px;
+    }
+    .card-md{
+        //box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0), 0 0px 0px 0px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.0);
+        box-shadow: none;
+    }
+    .plus{
+        max-width: 100%;
+        width: 67%;
+
+        text-align: center;
+        
+        /* color: white; */
+        border: 0;
+    }
+    .wide{
+        height: 70px;
+    }
+
+
+    //filter scss
+    .my-overlay {
+        position: fixed;
+        width: 100%;
+        height: 40%;
+        background: rgba(0,0,0,0.7);
+        z-index: 20;
+        top: 0;
+        left: 0;
+    }
+    .person{
+        border-radius: 50%;
+        width:20%;
+        
+        padding: 2% 2% 2% 2%;
+    }
+    .add{
+        position: fixed !important;
+        bottom: 86px;
+        left: 76%;
+    }
+    .my-overlay {
+        position: fixed;
+        width: 100%;
+        height: 50%;
+        background: rgba(0,0,0,0.7);
+        z-index: 20;
+        top: 60%;
+        left: 0;
+      }
+    
+
+}
