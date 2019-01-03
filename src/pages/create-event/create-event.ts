@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams} from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { EventdetailsPage } from '../eventdetails/eventdetails';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the CreateEventPage page.
@@ -33,7 +34,7 @@ export class CreateEventPage {
       this.buttonClicked = !this.buttonClicked;
   }
   back(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(TabsPage);
   }
   next(){
     this.navCtrl.push(EventdetailsPage);

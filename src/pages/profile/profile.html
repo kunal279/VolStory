@@ -9,8 +9,6 @@
         <ion-row><a clear (click)="back()"><img src="../../assets/imgs/SystemIcons/arrow_back.svg"></a>
             <ion-title class="title">Profile
                <a clear (click)="back()"> </a>
-                
-
             </ion-title>
         </ion-row>
     </ion-navbar>
@@ -102,6 +100,39 @@
                 </div>    
             </ion-item><div class="adjust"></div>
         </ion-card> 
+
+        <a clear (click)="events()">
+            <ion-card>
+                <!-- item 2  Event 2 starts... -->     
+                <ion-item class="diff" no-lines>
+                    <img class="e-icon" src="../../assets/imgs/Category-Animal Welfare.svg" item-start>
+                    <p class="subtitle">Pet Adoption Camp</p>
+                    <p class="subtext">Animal Welfare
+                        <img class="s-icons" src="../../assets/imgs/SystemIcons/public event.svg" >
+                    </p>
+                </ion-item>
+                
+                <ion-item class="details" item-start no-lines>
+                    <img item-start class="e-details" src="../../assets/imgs/SystemIcons/calendar.svg">
+                    <ion-label class="space">Mon, Jul 03, 01 Day Event</ion-label>
+                </ion-item>
+                <ion-item class="details" item-start no-lines>
+                    <img item-start class="e-details" src="../../assets/imgs/SystemIcons/person (user).svg">
+                    <ion-label class="space">Saniya Mahtur</ion-label>
+                </ion-item>
+                <ion-item class="details" item-start no-lines>
+                    <img item-start class="e-details" src="../../assets/imgs/SystemIcons/location.svg">
+                    <ion-label class="space">Bharati Vidyapith College</ion-label>
+                </ion-item>
+                <ion-item class="lines">
+                    <div>
+                        <button class="b-share"><img class="share" src="../../assets/imgs/SystemIcons/share.svg"></button>
+                        <button class="b-share"><img class="share" src="../../assets/imgs/SystemIcons/star border.svg"></button>
+                        <button class="b-share"><img class="share" src="../../assets/imgs/SystemIcons/join event 2.svg"></button>
+                    </div>    
+                </ion-item> <div class="adjust"></div>
+            </ion-card>
+        </a>
     </div>
       <a> 
           <ion-item class="before" no-lines>
@@ -119,7 +150,7 @@
               </ion-label>
           </ion-item>
       </a>
-      <a clear (click)="createprofile()"> 
+      <!-- <a clear (click)="createprofile()"> 
           <ion-item class="before" no-lines>
               <ion-label class="history">
                   create profile page
@@ -130,24 +161,11 @@
   
               </ion-label>
           </ion-item>
-      </a>
+      </a> -->
       <a clear (click)="joinreq()"> 
         <ion-item class="before" no-lines>
             <ion-label class="history">
-                join re
-                
-                
-                    <ion-icon class="drop" style="text-align: right" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
-                
-
-            </ion-label>
-        </ion-item>
-    </a>
-
-    <a clear (click)="notify()"> 
-        <ion-item class="before" no-lines>
-            <ion-label class="history">
-                notification
+                Interests
                 
                 
                     <ion-icon class="drop" style="text-align: right" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>

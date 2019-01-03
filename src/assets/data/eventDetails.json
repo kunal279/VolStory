@@ -1,0 +1,21 @@
+{
+    "coverphoto": "../../assets/data/img/event.jpg",
+    "membersjoined" : "3",
+    "memberscanjoin": "15",
+    "interested" : "27",
+    "eventowner" : "Rahul Joshi",
+    "scheduledon" : "Mar 20",
+    "facilities" : {
+        "snacks" :"true", "stipend" : "true","meal" : "true", "certificate" : "true"
+    },
+    "requiredskills" : ["Leadership", "Communication", "Manage accounts"],
+    "Description" : "This palce has the brief of an event. There will be limitation of 150 to 1000 characters for the description",
+    "tags" : ["#treeplantation", "#trees", "#environment"],
+    "comments": [{
+        "ownerimage" : "../../assets/data/img/event.jpg",
+        "ownername" : "Abhiram Thakur",
+        "commenttext" : "Awsommeeee event",
+        "commrnttime": "20min"
+    }]
+
+}

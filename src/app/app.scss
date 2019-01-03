@@ -22,12 +22,9 @@
   font-style: normal;
 }
 
-
-
-
-
 .toolbar-background {
     // Your gradient stuff here
+    // height: 56px ;
     background: linear-gradient(to right, #17787d, #00bbb4);
 }
 ion-icon {
@@ -42,6 +39,8 @@ ion-icon {
     &[class*="homefilled"] {
         mask-image: url(../assets/imgs/homefilled.svg);
     }
-    
+    .toolbar{
+        min-height: 30px ;
+    }
 }
 

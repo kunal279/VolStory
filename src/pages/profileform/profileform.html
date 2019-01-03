@@ -43,20 +43,21 @@
       </ion-row>
       <div class="h-line"></div>
       <ion-row class="row-ele">
-        <img class="person" src="assets/imgs/SystemIcons/Birthday cake.svg">
-        <ion-input class="name" placeholder="Age" type="text"></ion-input>
-        <img class="person" src="assets/imgs/SystemIcons/gender.svg">
-         
-        <ion-col col-5>
-        <ion-select class="name gen" placeholder="Gender" [(ngModel)]="gender">
-          <ion-option value="male">Male</ion-option>
-            <ion-option value="female">Female</ion-option>
-        </ion-select>
-      </ion-col>
+          <img class="person" src="assets/imgs/SystemIcons/Birthday cake.svg">
+          <ion-input class="name" placeholder="Age" type="text"></ion-input>
+          <img class="person" src="assets/imgs/SystemIcons/gender.svg">
+          
+          <ion-col col-5>
+              <select required class="name gen" placeholder="Gender" style="color:gray" [(ngModel)]="gender">
+                  <option value="" >Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+              </select>
+          </ion-col>
       </ion-row>
       <div class="h-line"></div>
       <ion-row class="row-ele">
-        <img class="person" src="assets/imgs/SystemIcons/location.svg">
+          <img class="person" src="assets/imgs/SystemIcons/location.svg">
         <ion-input class="name" placeholder="Location" type="text"></ion-input>
       </ion-row>
       <div class="h-line"></div>
@@ -105,22 +106,11 @@
       </ion-row>
       <div class="h-line"></div>
 
-      <ion-row class="row-ele">
-        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
-      </ion-row>
+      
       <div class="h-line"></div>
-      <ion-row class="row-ele">
-        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
-      </ion-row>
-      <div class="h-line"></div>
-      <ion-row class="row-ele">
-        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
-      </ion-row>
-      <div class="h-line"></div>
-      <ion-row class="row-ele">
-        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
-      </ion-row>
-      <div class="h-line"></div>
-
-
+      <select class="name gen" placeholder="Gender" [(ngModel)]="gender">
+        Gender
+        <!-- <ion-option value="male">Male</ion-option> -->
+          <option><ion-option value="female">Female</ion-option></option>
+      </select>
 </ion-content>

@@ -1,5 +1,16 @@
 page-myprofile {
-
+    .toolbar-title-md {
+        padding: 0 8px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        font-family: "DroidSans" ;
+        opacity: 87%;
+    }
+    .ion-md-create:before {
+        content: "\f2db";
+        color: white;
+    }
     .picture{
         border-radius: 50%;
         text-align: center;
@@ -111,8 +122,11 @@ page-myprofile {
     }
     .drop{
         text-align: right ;
+        position: fixed ;
+        right: 22px ;
         //clear: both;
         //margin-left: 58%; 
+        
     }
     .input-wrapper {
         
@@ -198,7 +212,7 @@ page-myprofile {
     }
      
     .lines .item-inner{
-        height: 10px;
+        height: 1SSS0px;
         margin-top: 4px;
     }
     .details .item-md[no-lines] {
@@ -218,5 +232,18 @@ page-myprofile {
         right: 10%;
         width: 14px;
         //height: 20px; 
+    }
+    .update{
+        margin-left: 70% ;
+    }
+    .input-wrapper {
+        border-bottom: inset;
+        border-width: 0px;
+        margin-right: 4%;
+    }
+    .before .input-wrapper {
+        border-bottom: inset;
+        border-width: 1px;
+        margin-right: 4%;
     }
 }

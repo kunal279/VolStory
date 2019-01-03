@@ -1,7 +1,6 @@
-<ion-tabs>
-    <ion-tab [root]="homePage" tabIcon="homefilled"  ></ion-tab>
-    <ion-tab [root]="tab2Page" tabTitle="Tab2Page" tabIcon="book"></ion-tab>
-    <ion-tab [root]="homePage" tabTitle="MomePage" tabIcon="star"></ion-tab>
-    <ion-tab [root]="tab2Page" tabTitle="Tab2Page" tabIcon="book"></ion-tab>
+<ion-tabs [ngClass]="{'hidden': hideTabs}">
+    <ion-tab class="tab" [root]="tab1Page" tabIcon="home" tabsHideOnSubPages="true"></ion-tab>
+    <ion-tab class="tab" [root]="tab2Page" tabIcon="book" tabsHideOnSubPages="true"></ion-tab>
+    <ion-tab class="tab" [root]="tab3Page" tabIcon="notifications" tabsHideOnSubPages="true"></ion-tab>
+    <ion-tab class="tab" [root]="tab4Page" tabIcon="person" tabsHideOnSubPages="true"></ion-tab>
 </ion-tabs>
-

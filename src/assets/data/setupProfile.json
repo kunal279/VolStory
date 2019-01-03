@@ -1,0 +1,14 @@
+{
+    "profileimage":"../../assets/data/img/pic.jpg",
+    "follwing" : "12",
+    "follwers" : "20",   
+    "name" : "Aditya Lohia",
+    "age" : "26",
+    "Gender" : "male",
+    "Location" : "Iskcon Nvcc Road, Katraj-Kondwa Bypass, Tilekar Nagar, Kondhwa Budruk, Pune, Maharashtra 411048",
+    "mobilenumber" : "954949521",
+    "emailid" : "example@gmail.com",
+    "website" : "www.example.com",
+    "skills" : ["Leadership", "Communication", "Manage accounts"],
+    "Interests" : ["Leadership", "Communication", "Manage accounts"]
+}

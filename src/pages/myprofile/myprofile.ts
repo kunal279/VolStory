@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProfileformPage } from '../profileform/profileform';
 
 /**
  * Generated class for the MyprofilePage page.
@@ -14,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'myprofile.html',
 })
 export class MyprofilePage {
+  public overlayHidden: boolean=false;
+  buttonClicked: boolean=false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -21,5 +24,16 @@ export class MyprofilePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MyprofilePage');
   }
-
+  proform()
+  {
+    this.navCtrl.push(ProfileformPage);
+  }
+  interests() {
+      this.onButtonClick();
+      this.overlayHidden = false;
+  }
+  public onButtonClick() {
+      this.buttonClicked = !this.buttonClicked;
+  }
+  
 }

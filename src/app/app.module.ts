@@ -24,6 +24,7 @@ import { MyprofilePage } from '../pages/myprofile/myprofile';
 import { ImagePicker } from '@ionic-native/image-picker';
 import { NotifyPage } from '../pages/notify/notify';
 import { EventgalleryPage } from '../pages/eventgallery/eventgallery';
+import { MystoryPage } from '../pages/mystory/mystory';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { EventgalleryPage } from '../pages/eventgallery/eventgallery';
     AddphotoPage,
     MyprofilePage,
     NotifyPage,
-    EventgalleryPage
+    EventgalleryPage,
+    MystoryPage
   ],
   imports: [
     BrowserModule,
@@ -67,7 +69,8 @@ import { EventgalleryPage } from '../pages/eventgallery/eventgallery';
     AddphotoPage,
     MyprofilePage,
     NotifyPage,
-    EventgalleryPage
+    EventgalleryPage,
+    MystoryPage
   ],
   providers: [
     StatusBar,
