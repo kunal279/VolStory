@@ -1,7 +1,7 @@
 import { Component} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
 import { AddphotoPage } from '../addphoto/addphoto';
+import { TabsPage } from '../tabs/tabs';
 
 
 //import { Camera } from '@ionic-native/camera';
@@ -30,7 +30,7 @@ import { AddphotoPage } from '../addphoto/addphoto';
          console.log('ionViewDidLoad SignUpPage');
      }
      home(){
-         this.navCtrl.setRoot(HomePage);
+         this.navCtrl.setRoot(TabsPage);
      }
      add(){
          this.navCtrl.push(AddphotoPage);

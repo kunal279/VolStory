@@ -12,14 +12,28 @@
     
     <div class="b">
         
-        <button class="Google" ion-button  ><ion-icon name="logo-googleplus" item-start></ion-icon>Sign up with Google</button>
+        <button class="Google" ion-button  >
+            <ion-col col-1>
+                <ion-icon class="gplus" name="logo-googleplus" item-start></ion-icon>
+            </ion-col>
+            <ion-col col-11>
+                Sign up with Google
+            </ion-col>
+        </button>
     </div>
     <div class="b">
         
-        <button class="Facebook" ion-button clear (click)="add()"><ion-icon name="logo-facebook" item-start></ion-icon>Sign up with Facebook</button>
+        <button class="Facebook" ion-button>
+            <ion-col col-1>
+                <ion-icon class="gplus" name="logo-facebook" item-start></ion-icon>
+            </ion-col>
+            <ion-col col-11>
+                Sign up with Facebook
+            </ion-col>
+        </button>
     </div>
     <ion-grid><ion-row>
-        <a clear (click)="home()"><button class="skip" ion-button>Skip</button></a>
+        <a clear (click)="home()"><button class="skip" ion-button><b>Skip</b></button></a>
     </ion-row></ion-grid>
     
 </ion-content>

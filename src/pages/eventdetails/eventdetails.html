@@ -15,12 +15,12 @@
 
 <ion-content>
     <div class="progress" ></div>
-    <ion-item no-lines padding-left>
+    <ion-item no-lines padding-left padding-right>
       <ion-label>
-      Event Discription
+      Event Description
     </ion-label>
   </ion-item>
-  <ion-item no-lines padding-left>
+  <ion-item no-lines padding-left padding-right>
   <ion-label>
       From
     </ion-label>
@@ -28,7 +28,7 @@
   <ion-item  padding-left>
       <ion-datetime displayFormat="DDD, MMM DD, YYYY HH:mm, A" placeholder="Day / Date / Time" [(ngModel)]="startDate"></ion-datetime>
   </ion-item> 
-  <ion-item no-lines padding-left>
+  <ion-item no-lines padding-left padding-right>
       <ion-label>
           To
       </ion-label>
@@ -36,15 +36,15 @@
   <ion-item padding-left>
       <ion-datetime displayFormat="DDD, MMM DD, YYYY HH:mm, A" placeholder="Day / Date / Time" [(ngModel)]="endDate"></ion-datetime>
   </ion-item> 
-  <ion-item no-lines padding-left>
+  <ion-item no-lines padding-left padding-right>
       <ion-label>
           Last Date of Joining
       </ion-label>
   </ion-item>  
-  <ion-item padding-left>
+  <ion-item padding-left padding-right>
       <ion-datetime displayFormat="DDD, MMM DD, YYYY HH:mm, A" placeholder="Day / Date" [(ngModel)]="lastJoinDate"></ion-datetime>
   </ion-item>
-  <ion-item no-lines padding-left>
+  <ion-item no-lines padding-left padding-right>
       <ion-label class="vclabel">
           Required Volunteers
       </ion-label>
@@ -52,20 +52,46 @@
   
   <ion-grid>
       <ion-row class="vol">
-          <ion-col col-4>
+          <ion-col col-5>
               <ion-row class="volmin"><ion-label class="min">Min</ion-label>
                   <ion-input class="volCount" type="number" value="min"></ion-input>
               </ion-row>
           </ion-col>
-          <ion-col col-4>
+          <ion-col col-0.5></ion-col>
+          <ion-col col-5>
               <ion-row class="volmax"><ion-label class="max">Max</ion-label>
                   <ion-input class="volCount" type="number" value="min"></ion-input>
               </ion-row>
           </ion-col>
       </ion-row>
   </ion-grid>
-  
-  <!-- <ion-item no-lines>
+  <ion-item no-lines padding-left padding-right>
+        <ion-label class="titl">
+            <b>Required Skills</b>
+        </ion-label>
+  </ion-item>
+  <a clear (click)="addskill()">
+      <ion-item padding-left padding-right>
+          <ion-label class="in">
+              <ion-icon class="drop" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+          </ion-label>
+      </ion-item>
+  </a>
+  <!-- <a clear (click)="addskill()"> 
+    <ion-item  padding-left>
+      
+            <ion-icon class="drop" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+    </ion-item>
+</a> -->
+<div class="shift">
+    <button class="skill" ion-button round outline>Leadership</button>
+    <button class="skill" ion-button round outline>Communication</button>
+    <button class="skill" ion-button round outline>Marketting</button>
+    <button class="skill" ion-button round outline>Cooking </button>
+    <button class="skill" ion-button round outline>Manage accounts </button>
+    <button class="skill" ion-button round outline>Gardening </button>
+</div> 
+<!-- <ion-item no-lines>
       <ion-select [(ngModel)]="skills" multiple="true" (click)="skills()">
           <ion-option> 
               <ion-chip>
@@ -79,11 +105,12 @@
       <ion-chip>bigbigbigbig</ion-chip>
       <ion-chip>little</ion-chip>
   </div> -->
-
-  <ion-grid>
-      <ion-row>
-          <button class="back" clear (click)="back()" ion-button>BACK</button>
-          <button class="next" clear (click)="next()" ion-button>NEXT</button>
-      </ion-row>
-  </ion-grid>  
+  <ion-fab>
+      <ion-grid>
+          <ion-row>
+              <button class="back" clear (click)="back()" ion-button>BACK</button>
+              <button class="next" clear (click)="next()" ion-button>NEXT</button>
+          </ion-row>
+      </ion-grid>  
+  </ion-fab>
 </ion-content>

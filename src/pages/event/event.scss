@@ -37,7 +37,7 @@ page-event {
         width: 100%;
     }
     .subtext{
-        font-size: 13px;
+        font-size: 14px;
         opacity: 20%;   
         font-family: "DroidSans"; 
        // line-height: 12.2px;     
@@ -61,7 +61,7 @@ page-event {
         width: 60%;
     }
     .e-details{
-        width: 13px;
+        width: 16px;
         margin-left: 4.5%;
         margin-bottom: 0px;
         margin-top: 0px;
@@ -73,7 +73,7 @@ page-event {
         min-height:14px;       
     }
     .space{
-        font-size: 13px;
+        font-size: 16px;
         height: 16px;
         margin-bottom: 0px;
         margin-top: 0px;
@@ -121,6 +121,10 @@ page-event {
     .row{
         padding: 0;
     }
+    .facicon{
+        height: 34px ;
+    }
+    
     .titl.label-md {
         margin: 0% 8px 0% 0.4%;
         color:#212121;
@@ -128,17 +132,20 @@ page-event {
         font-size: 14px;
     }
     .stipend{
-        width: 80px;
+        width: 90px;
     }
     .facility {
         width:80px;
-        padding-left: 0% ;
+        padding-left: 8px ;
         margin: 0 ;
         text-align: center ;
+        font-family: "DroidSans" ;
+        font-size: 12px;
     }
-    p{
-        text-align: center ;
-    }
+    // p{
+    //     text-align: center ;
+    //     //padding-left:10px; 
+    // }
     .drop{
         text-align: right ;
         margin-left: 66%;
@@ -207,4 +214,156 @@ page-event {
     .next .button-inner{
         outline-style: auto;    
     }
+    .skill{
+        outline-color: #212121 ;
+        background-color: #ffffff ;
+        color: #212121 ;
+    }
+    .footer{
+        overflow-y: hidden ;
+        overflow: hidden;
+    }
+    .alert-md .alert-button-group {
+        -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+        -webkit-box-pack: end;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: end;
+        justify-content: space-around;
+        padding: 8px 10px 8px 24px;
+        color: #212121 ;
+    }
+    .details{
+        color: #212121 ;
+        font-family: "DroidSans" ;
+        font-size: 16px ;
+        //margin-bottom: 30px ;
+    }
+    .segment-md .segment-button {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 0;
+        height: 44px;
+        border-bottom-width: 6px;
+        border-bottom-style: solid;
+        //border-bottom-color: rgba(0, 0, 0, 0.1);
+        border-bottom-color: rgb(221, 221, 221);
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 4rem;
+        text-transform: none;
+        color: #212121;
+        background-color: transparent;
+        opacity: 0.7;
+        -webkit-transition: 100ms all linear;
+        transition: 100ms all linear;
+        padding: 0 6px;
+        font-family: "DroidSans" ;
+        font-size: 16px ;
+        margin-bottom: 30px ;
+    }
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+        border-color: rgb(196, 196, 196);
+        opacity: 1;
+    }
+    .titl.label-md {
+        margin: 8% 8px 0% 0%;
+        color:#212121;
+        font-family: "DroidSans";
+        font-size: 14px;
+    }
+    // .scrol{
+    //     height: 87%;
+    //     overflow-y: scroll ;
+    //     overflow-x: hidden ;
+        
+    // }
+    p .para{
+        // padding-left: 3.2px;
+        // padding-right: 3.2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top:0px;
+        margin-bottom: 5px ;
+
+    }
+    // .item-md p {
+    //     margin: 0px 0px 0px;
+    //     width: 20%;
+    //     text-align: left;
+    //     font-size: 10px;
+    //     font-family: "DroidSans" ;
+    // }
+    .item-md ion-avatar[item-left], .item-md ion-thumbnail[item-left], .item-md ion-avatar[item-start], .item-md ion-thumbnail[item-start] {
+        margin: 2px 16px 8px 0;
+    }
+    .label-md {
+        margin: 10px 8px 10px 0;
+    }
+    b, strong {
+        font-weight: bold;
+        font-size: 16px;
+        font-family: "DroidSans" ;
+    }
+    .item-md h3, .item-md h4, .item-md h5, .item-md h6 {
+        margin: 0 0 0 0 ;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: normal;
+        font-family: "DroidSans" ;
+    }
+    .item-md h2 {
+        margin: 0px 0;
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+    .tex{
+        //outline-style: auto ;
+        margin: 0px 0px 0px 0px ;
+        overflow-x: hidden ;
+        overflow-y: hidden ;
+    }
+    .outline{
+        outline-style: auto ;
+        bottom: 0px ;
+        height: 42px;
+        
+    }
+    .send{
+        z-index: 999;
+        width: 30px;
+        padding-top: 10px;
+        
+    }
+    .ion-md-send:before {
+        width: 28px;
+        font-size: 26px;
+        padding-bottom: 0px;
+        color: #666666;
+        content: "\f376";
+    }
+    .season{
+        padding: 0;
+        margin: 0;
+    }
+    // .divide{
+                
+    //     border-top-style: groove;
+    //     border-top-width: 1px;
+    //     min-height: 1px;
+    //     margin-left: 4.5%;
+    //     margin-right:4.5% ;
+    // }
+    .duration{
+       margin: 0px 0px 0px 0px;
+       margin-left: 0px ;
+       width: 20%;
+       text-align: left;
+       font-size: 10px;
+       font-family: "DroidSans" ;
+   }
+    
 }

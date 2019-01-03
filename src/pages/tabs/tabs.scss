@@ -1,3 +1,24 @@
 page-tabs {
-
+    .tabs-md .tab-button.icon-only{
+        background-color: #01a39f ;
+        height: 30px ;
+    }
+    .ion-md-home:before {
+        content: "\f30c";
+        color: white;
+        width: 20px ;
+    }
+    .ion-md-book:before {
+        content: "\f29e";
+        color: white;
+    }
+    .ion-md-notifications:before {
+        content: "\f338";
+        color: white;
+    }
+    .ion-md-person:before {
+        content: "\f345";
+        color: white;
+    }
+    
 }
