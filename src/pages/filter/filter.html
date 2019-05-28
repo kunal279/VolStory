@@ -28,8 +28,9 @@
             </ion-segment-button>
         </ion-segment>
     </div>
+
     <div [ngSwitch]="filter">
-        <ion-list *ngSwitchCase="Time">
+        <ion-list *ngSwitchCase="'Time'">
             <!-- <ion-item no-lines>
                 <ion-label>Tomorrow</ion-label>
                 <ion-radio checked="" value="tomorrow"></ion-radio>

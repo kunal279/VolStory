@@ -15,7 +15,8 @@ import { HomePage } from '../home/home';
   templateUrl: 'profileform.html',
 })
 export class ProfileformPage {
-
+  categoriesAvail: any = ["male","female"];
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

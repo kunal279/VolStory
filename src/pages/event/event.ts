@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { DiscriptionPage } from '../discription/discription';
 import { HomePage } from '../home/home';
+import { ProfilePage } from '../profile/profile';
+import { TabsPage } from '../tabs/tabs';
+import {HttpClientProvider} from '../../provider/http-api';
 
 /**
  * Generated class for the EventPage page.
@@ -16,8 +19,10 @@ import { HomePage } from '../home/home';
   templateUrl: 'event.html',
 })
 export class EventPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl:AlertController) {
+  public items: any=[];
+  detail: string;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl:AlertController, public callApi:HttpClientProvider) {
+    this.detail="Details";
   }
 
   ionViewDidLoad() {
@@ -34,15 +39,15 @@ export class EventPage {
 
   presentAlert() {
     let alert = this.alertCtrl.create({
-      subTitle: 'Are you sure youwant to',
-      title: 'Leave Pet Adoption Camp',
+      title: 'Are you sure you want to',
+      subTitle: 'Leave Pet Adoption Camp',
       buttons: [
         {
           text: 'YES',
           role: 'yes',
           handler: () => {
             //onsole.log('Yes clicked');
-            this.navCtrl.push(HomePage);
+            this.navCtrl.push(TabsPage);
           }
         },
         {
@@ -56,5 +61,29 @@ export class EventPage {
     alert.present();
   }
 
+profile(){
+  this.navCtrl.push(ProfilePage);
+}
+fun(){
+  this.navCtrl.push(ProfilePage);
+}
 
+// ngOnInit() {
+//     let title;
+//   title = this.navParams.get('title');
+//   console.log("rout param is "+title);
+  
+
+//   return new Promise(resolve => {
+//       this.callApi.getProfile().then((result:any) => {
+//           console.log("Result",result);
+//           // this.productList=result.data;
+//           this.items=result
+          
+//           console.log("array",this.items)
+//       }, (err) => {
+//           console.log(err);
+//       });
+//   });
+// }
 }

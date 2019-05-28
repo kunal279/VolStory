@@ -1,8 +1,8 @@
 import { Component} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
-import { AddphotoPage } from '../addphoto/addphoto';
-
+//import { AddphotoPage } from '../addphoto/addphoto';
+import { TabsPage } from '../tabs/tabs';
+import { GooglePlus } from '@ionic-native/google-plus/ngx';
 
 //import { Camera } from '@ionic-native/camera';
 //import { TabsPage } from '../tabs/tabs'
@@ -22,7 +22,7 @@ import { AddphotoPage } from '../addphoto/addphoto';
  export class SignUpPage {
      path: String;
   
-     constructor(public navCtrl: NavController, public navParams: NavParams) {
+     constructor(public navCtrl: NavController, public navParams: NavParams, private googlePlus: GooglePlus) {
          this.path="assets/imgs/download.png";
      }
      
@@ -30,12 +30,16 @@ import { AddphotoPage } from '../addphoto/addphoto';
          console.log('ionViewDidLoad SignUpPage');
      }
      home(){
-         this.navCtrl.setRoot(HomePage);
+         this.navCtrl.setRoot(TabsPage);
      }
-     add(){
-         this.navCtrl.push(AddphotoPage);
-     }
+    //  add(){
+    //      this.navCtrl.push(AddphotoPage);
+    //  }
      
-    
+    bygoogle()
+    {
+        this.googlePlus.login({})
+        .then(res => console.log(res))
+        .catch(err => console.error(err));
     }
-    
+} 

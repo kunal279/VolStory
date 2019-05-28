@@ -37,11 +37,11 @@
         </ion-grid>
     </ion-item>
     <div class="divide" ></div>
-    
+    <a clear (click)="profile()">
     <ion-item class="details lines" item-start no-lines>
         <img item-start class="e-details" src="assets/imgs/SystemIcons/person (user).svg">
             <ion-label class="space">Rahul Joshi</ion-label>
-        </ion-item>
+        </ion-item></a>
       <ion-item class="details" item-start no-lines>
           <img item-start class="e-details" src="assets/imgs/SystemIcons/calendar.svg">
               <ion-label class="space">Fri, Jan 7, 13 Day Event</ion-label>
@@ -93,12 +93,154 @@
                         <ion-icon class="drop" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
                     </ion-label>
                 </ion-item>
-            </a>
-            <!--</ion-card>-->
+            </a><div class="divide" ></div>
+            
+            
+            <ion-segment [(ngModel)]="detail">
+                <ion-segment-button value="Details" class="details">
+                    Details
+                </ion-segment-button>
+                <ion-segment-button value="Photos" class="details">
+                    Photos & Videos
+                </ion-segment-button>
+                
+            </ion-segment>
+            
+            <div [ngSwitch]="detail" >
+                <ion-list *ngSwitchCase="'Details'" class="season">
+                    <ion-item no-lines>
+                        <ion-label class="titl">
+                            <b>  Description</b>
+                            
+                        </ion-label>
+                    </ion-item>
+                    <div class="des-hght">
+                        <p class="para" padding-left padding-right>
+                            This palce has the brief of an event. There will be limitation of 150 to 1000 characters
+                            for the description.
+                        </p>
+                        <p class="para" padding-left padding-right>
+                            The host can give a detailed understanding of the event, exact place, organiser detils, timings, 
+                            perks and facilites and it may also have appeal to the users to join this event.
+                        </p>
+                        
+                        <p class="para" padding-left padding-right>This place has the brief of the event. There will be the limitation of 150 to 1000 characters for the 
+                            description.
+                        </p>
+                    </div>   
+                
+            
+
+            <div class="divide"></div>
+            
+            <ion-item padding no-lines>
+                <h2>
+                    #treeplantation #trees #savenature
+                </h2>
+                <h2>
+                    #Education
+                </h2>
+                <h2>
+                    
+                </h2>
+            </ion-item>
+            
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Abhiram Thakur</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">20 min</p>
+            </ion-item>
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Aditya</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">36 min</p>
+            </ion-item>
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Kalyani Patil</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">10 min</p>
+            </ion-item>
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Kalyani Patil</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">10 min</p>
+            </ion-item>
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Kalyani Patil</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">10 min</p>
+            </ion-item>
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Kalyani Patil</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">10 min</p>
+            </ion-item>
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Abhiram Thakur</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">20 min</p>
+            </ion-item>
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Abhiram Thakur</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">20 min</p>
+            </ion-item>
+            <ion-item class="joined" no-lines>
+                <ion-avatar class="pic" item-start>
+                    <img class="imag" src="assets/imgs/download.png">
+                </ion-avatar>
+                <h2><b>Abhiram Thakur</b></h2>
+                <h3>Awsommm! wish to work with you all again</h3>
+                <p class="duration">20 min</p>
+            </ion-item> 
+            <!-- <div class="hght"></div> -->
+        
+        
+        <!--</ion-card>-->
+        
+        <!-- <ion-fab>
             <ion-grid>
                 <ion-row>
                     <button class="back" clear (click)="back()" ion-button>BACK</button>
                     <button class="next" clear (click)="next()" ion-button>NEXT</button>
+                    </ion-row>
+                </ion-grid>  
+            </ion-fab> -->
+            <div class="outline">
+                <ion-row>
+                    
+                    <ion-input class="tex" placeholder="Write a comment" type="text" value="">
+                        
+                    </ion-input>
+                    <ion-icon class="send" (click)="fun()" ios="ios-send" md="md-send">
+                        </ion-icon>
+                    
                 </ion-row>
-            </ion-grid> 
+                </div>
+        </ion-list>
+        </div>    
 </ion-content>

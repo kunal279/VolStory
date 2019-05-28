@@ -43,20 +43,33 @@
       </ion-row>
       <div class="h-line"></div>
       <ion-row class="row-ele">
-        <img class="person" src="assets/imgs/SystemIcons/Birthday cake.svg">
-        <ion-input class="name" placeholder="Age" type="text"></ion-input>
-        <img class="person" src="assets/imgs/SystemIcons/gender.svg">
-         
-        <ion-col col-5>
-        <ion-select class="name gen" placeholder="Gender" [(ngModel)]="gender">
-          <ion-option value="male">Male</ion-option>
-            <ion-option value="female">Female</ion-option>
-        </ion-select>
-      </ion-col>
+          <img class="person" src="assets/imgs/SystemIcons/Birthday cake.svg">
+          <ion-input class="name" placeholder="Age" type="text"></ion-input>
+          <img class="person" src="assets/imgs/SystemIcons/gender.svg">
+          
+          <ion-col col-5>
+              <ion-select required interface="popover" class="name gen" placeholder="Gender" style="color:gray" [(ngModel)]="gender">
+                  <ion-option value="" >Gender</ion-option>
+                  <ion-option value="male">Male</ion-option>
+                  <ion-option value="female">Female</ion-option>
+              </ion-select>
+              
+                <!-- <ion-label class="content">Category</ion-label> -->
+               
+                  <!-- <ion-option *ngFor="let vCategory of categoriesAvail" [value]="vCategory.category" class="option"
+                              text-wrap>
+                    {{vCategory.category}}
+                  </ion-option> --> 
+                  <!-- <ion-select interface="popover" class="selectpart" placeholder="Gender" id="category">
+                  <ion-option value="male" class="option">Male</ion-option>
+                  <ion-option value="female" class="option">Female</ion-option>
+                </ion-select>
+               -->
+          </ion-col>
       </ion-row>
       <div class="h-line"></div>
       <ion-row class="row-ele">
-        <img class="person" src="assets/imgs/SystemIcons/location.svg">
+          <img class="person" src="assets/imgs/SystemIcons/location.svg">
         <ion-input class="name" placeholder="Location" type="text"></ion-input>
       </ion-row>
       <div class="h-line"></div>
@@ -105,22 +118,11 @@
       </ion-row>
       <div class="h-line"></div>
 
-      <ion-row class="row-ele">
-        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
-      </ion-row>
+      
       <div class="h-line"></div>
-      <ion-row class="row-ele">
-        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
-      </ion-row>
-      <div class="h-line"></div>
-      <ion-row class="row-ele">
-        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
-      </ion-row>
-      <div class="h-line"></div>
-      <ion-row class="row-ele">
-        <ion-input class="name" placeholder="Interests" type="text"></ion-input>
-      </ion-row>
-      <div class="h-line"></div>
-
-
+      <select class="name gen" placeholder="Gender" [(ngModel)]="gender">
+        Gender
+        <!-- <ion-option value="male">Male</ion-option> -->
+          <option><ion-option value="female">Female</ion-option></option>
+      </select>
 </ion-content>

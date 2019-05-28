@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { EventPage } from '../event/event';
+import swal from 'sweetalert';
+import { NON_TEXT_INPUT_REGEX } from 'ionic-angular/umd/util/dom';
 
 /**
  * Generated class for the FacilityPage page.
@@ -17,8 +19,11 @@ import { EventPage } from '../event/event';
 export class FacilityPage {
     overlayHidden: boolean = false;
   buttonClicked: boolean =false;
-    
   
+  public imageURL :any ="assets/imgs/allfinalvisuals/visuals-Event created.svg";
+  public f: any =false;
+  public msg:any = " Event Created";
+  public t:any =(`<b>hghgjh</b>`);
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
       }
       
@@ -34,6 +39,13 @@ export class FacilityPage {
           this.buttonClicked = !this.buttonClicked;
       }
       next(){
+        
+        swal(
+          {
+          icon: this.imageURL,
+          buttons: this.f,
+          text: this.msg ,
+        });
         this.navCtrl.push(EventPage);
         //this.someMetyhod();
       }

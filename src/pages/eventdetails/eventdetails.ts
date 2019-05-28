@@ -17,7 +17,7 @@ import { FacilityPage } from '../facility/facility';
 export class EventdetailsPage {
   overlayHidden: boolean=false;
   public buttonClicked: boolean = false;
-
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

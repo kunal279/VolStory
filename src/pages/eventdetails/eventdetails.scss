@@ -36,7 +36,30 @@ page-eventdetails {
         color: #ffffff;
         opacity: 87%;
     }
-
+    .titl.label-md {
+        margin: 0% 8px 0% 0.4%;
+        color:#212121;
+        font-family: "DroidSans";
+        font-size: 14px;
+    }
+    .drop{
+        text-align: right ;
+        margin-left: 96% ;
+        margin-top: 20px ;
+        padding: 0px ;
+    }
+    .titl{
+        padding: 0px ;
+        width: 100% ;
+    }
+    .in{
+        margin: 0px ;
+        padding: 0px ;
+    }
+    .item-md.item-block .item-inner {
+        padding-right: 0px;
+        border-bottom: 1px solid #dedede;
+    }
 
 
 
@@ -149,5 +172,60 @@ page-eventdetails {
     .next .button-inner{
         outline-style: auto;    
     }
-    
+    .skill{
+        //outline-color: #212121 ;
+        //outline-width: 2px ; 
+        background-color: #ffffff ;
+        color: #212121 ;
+        //height: 30px ;
+        padding: 0 1.8rem;
+        box-shadow: none ; 
+        border-color: #666666 ;
+        font-family: "DroidSans" ;
+        font-size: 14px ;
+        text-transform: none ;
+        margin-bottom: 10px ;
+        
+        margin-right: 8px ;
+        
+    }
+    .outline{
+        outline-style: auto ;
+    }
+    .shift{
+        padding-left: 4% ;
+        margin-top: 10px ;
+    }
+    .titl{
+        margin-bottom: 10px ;
+    }
+    .volmin{
+        margin-left: -14px ;
+        
+    }
+    .volmax{
+        margin-left: -14px ;
+    }
+    .volCount{
+        margin-left: -50px;
+        margin-right: 6px;
+    }
+    .text-input-md {
+        margin: 10px 3px 2px 4px;
+        max-width: 46px;
+        padding: 0;
+        outline-style: auto;
+        height: 26px;
+        width: calc(100% - 8px - 8px);
+    }
+    .max{
+        
+        font-size: 16px;
+        font-family: "DroidSans";
+    }
+    .min{
+        
+        font-size: 16px;
+        font-family: "DroidSans";   
+    }
 }

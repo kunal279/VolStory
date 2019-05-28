@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
+import { ErrorHandler, NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+
+import {HttpClientModule} from '@angular/common/http';
+import {HttpClientProvider} from '../provider/http-api';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -17,14 +20,14 @@ import { DiscriptionPage } from '../pages/discription/discription';
 import { ProfilePage } from '../pages/profile/profile';
 import { ProfileformPage } from '../pages/profileform/profileform';
 import { JoinreqPage } from '../pages/joinreq/joinreq';
-import { AddphotoPage } from '../pages/addphoto/addphoto';
+//import { AddphotoPage } from '../pages/addphoto/addphoto';
 import { Camera } from '@ionic-native/camera';
 import { MyprofilePage } from '../pages/myprofile/myprofile';
 
 import { ImagePicker } from '@ionic-native/image-picker';
 import { NotifyPage } from '../pages/notify/notify';
 import { EventgalleryPage } from '../pages/eventgallery/eventgallery';
-
+import { GooglePlus } from '@ionic-native/google-plus/ngx';
 @NgModule({
   declarations: [
     MyApp,
@@ -40,14 +43,20 @@ import { EventgalleryPage } from '../pages/eventgallery/eventgallery';
     ProfilePage,
     ProfileformPage,
     JoinreqPage,
-    AddphotoPage,
+   // AddphotoPage,
     MyprofilePage,
     NotifyPage,
     EventgalleryPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpClientModule,
+    
+    //IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      scrollAssist: false, 
+      autoFocusAssist: false
+  }),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -64,7 +73,7 @@ import { EventgalleryPage } from '../pages/eventgallery/eventgallery';
     ProfilePage,
     ProfileformPage,
     JoinreqPage,
-    AddphotoPage,
+   // AddphotoPage,
     MyprofilePage,
     NotifyPage,
     EventgalleryPage
@@ -72,7 +81,11 @@ import { EventgalleryPage } from '../pages/eventgallery/eventgallery';
   providers: [
     StatusBar,
     SplashScreen,Camera,ImagePicker,StatusBar,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    HttpClientProvider,GooglePlus,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+  ],
 })
 export class AppModule {}

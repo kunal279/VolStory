@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams} from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { EventdetailsPage } from '../eventdetails/eventdetails';
+import { TabsPage } from '../tabs/tabs';
+import {FormControl} from '@angular/forms';
 
 /**
  * Generated class for the CreateEventPage page.
@@ -18,7 +20,9 @@ import { EventdetailsPage } from '../eventdetails/eventdetails';
 export class CreateEventPage {
   public buttonClicked: boolean = false;
   slides: any;
+  disableSelect = new FormControl(false);
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {
@@ -33,7 +37,7 @@ export class CreateEventPage {
       this.buttonClicked = !this.buttonClicked;
   }
   back(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(TabsPage);
   }
   next(){
     this.navCtrl.push(EventdetailsPage);
